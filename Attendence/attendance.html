@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en" title="Coding design">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Attendance</title>
+    <link rel="stylesheet" href="../attendence.css" />
+    <script defer src="../attendance.js"></script>
+  </head>
+
+  <body>
+    <div id="control_attendance_table">
+      <div class="attendances_student">
+        <main class="attendances_student_table">
+          <section class="attendances_student_table__header">
+            <div class="attendances_student_table__header_handle">
+              <h1>Attendance</h1>
+              <button id="start_check_join">Start</button>
+              <button id="stop_check_join">Stop</button>
+            </div>
+            <div class="input-group">
+              <input id="search_input" type="search" placeholder="Search ..." />
+              <img
+                id="search_img"
+                src="https://cdn-icons-png.flaticon.com/512/3031/3031293.png"
+                alt="Search"
+              />
+            </div>
+          </section>
+          <section class="attendances_student_table__body">
+            <table>
+              <thead>
+                <tr>
+                  <!-- <span class="icon-arrow">&UpArrow;</span> -->
+                  <th>STT</th>
+                  <th id="_1">
+                    ID
+                    <span class="icon-arrow">&UpArrow;</span>
+                  </th>
+                  <!-- <th id="_2">Name <span class="icon-arrow">&UpArrow;</span></th> -->
+                  <th id="_2">
+                    Name
+                    <span class="icon-arrow">&UpArrow;</span>
+                  </th>
+                  <th id="_3">
+                    Code
+                    <span class="icon-arrow">&UpArrow;</span>
+                  </th>
+                  <th id="_4">
+                    Time Joined
+                    <span class="icon-arrow">&UpArrow;</span>
+                  </th>
+                </tr>
+              </thead>
+              <tbody id="attendances_student_table__body_tableData"></tbody>
+            </table>
+          </section>
+          <div class="attendances_student_pagination">
+            <div class="pagination"></div>
+          </div>
+        </main>
+      </div>
+      <div class="container_gallery">
+        <!-- <div class="grab_lecture_view">
+            <div class="grab_lecture_view_container">
+              <div class="grab_lecture_view_container_part1">
+                  <div class="main-video-container">
+                      <div class="student-name">
+                          <h3>Name: Nguyen Viet Tien</h3>
+                        <h3>Student ID: 20183330</h3>
+                      </div>
+                      <div>
+                        <video src="https://youtu.be/uz1JxyFVMf4" loop controls id="main-video"></video>            
+                        <h3 class="main-vid-title">house flood animation</h3>
+                      </div>
+                    </div>
+
+              </div>
+              <div class="warnning-list-container">
+                <div class="warnning-list-title" > 
+                  <h2>Warnning List</h2>
+                </div>
+                <div class="warnning-list-detail">    
+            
+                </div>
+              </div>
+              <div class="evidence_pagination">
+                <div class="evidence_pagination_inside"></div>
+              </div>
+            </div>
+          </div>
+      </div> -->
+    </div>
+  </body>
+</html>

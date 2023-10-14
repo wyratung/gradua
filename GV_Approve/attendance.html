@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en" title="Coding design">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="./attendence.css" />
+    <script defer src="./attendance.js"></script>
+  </head>
+
+  <body>
+    <div id="control_attendance_table">
+      <div class="attendances_student">
+        <main class="attendances_student_table">
+          <section class="attendances_student_table__header">
+            <h1>Student Image</h1>
+            <div class="input-group">
+              <input id="search_input" type="search" placeholder="Search ..." />
+              <img
+                id="search_img"
+                src="https://cdn-icons-png.flaticon.com/512/3031/3031293.png"
+                alt="Search"
+              />
+            </div>
+          </section>
+          <section class="attendances_student_table__body">
+            <table>
+              <thead>
+                <tr>
+                  <!-- <span class="icon-arrow">&UpArrow;</span> -->
+                  <th>STT</th>
+                  <th id="_1">
+                    ID
+                    <span class="icon-arrow">&UpArrow;</span>
+                  </th>
+                  <!-- <th id="_2">Name <span class="icon-arrow">&UpArrow;</span></th> -->
+                  <th id="_2">
+                    Timestamp
+                    <span class="icon-arrow">&UpArrow;</span>
+                  </th>
+                  <th id="_3">
+                    Time Approve
+                    <span class="icon-arrow">&UpArrow;</span>
+                  </th>
+                  <th id="_4">
+                    Approve Code
+                    <span class="icon-arrow">&UpArrow;</span>
+                  </th>
+                  <th>Portrait Image</th>
+                </tr>
+              </thead>
+              <tbody id="attendances_student_table__body_tableData"></tbody>
+            </table>
+          </section>
+          <div class="attendances_student_pagination">
+            <div class="pagination"></div>
+          </div>
+        </main>
+      </div>
+      <div class="container_gallery"></div>
+    </div>
+  </body>
+</html>

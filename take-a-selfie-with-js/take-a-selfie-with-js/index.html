@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Demo: Take a Selfie With JavaScript</title>
+
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/pako/2.1.0/pako.min.js"></script>
+    <link defer rel="stylesheet" href="assets/css/styles.css" />
+  </head>
+  <body>
+    <div id="sefid_container">
+      <div id="bouderry-student-infor">
+        <div class="row">
+          <span>
+            <h4>MSSV</h4>
+            <input
+              class="basic-slide"
+              id="MSSV"
+              type="search"
+              placeholder="20133131"
+              required
+            /><label for="number"></label>
+          </span>
+          <span>
+            <h4>Class ID</h4>
+            <input
+              class="basic-slide"
+              id="ClassID"
+              type="search"
+              placeholder="IT3012"
+              required
+            /><label for="name"></label>
+          </span>
+        </div>
+      </div>
+      <h3 id="sefid_container_intruction">
+        Please put your face straight into the camera!
+      </h3>
+      
+      <div class="sefid_container_main">
+        <div class="sefid_container_main_part1">
+          <video id="sefid_container_main_part1_camera"></video>
+          <div class="sefid_container_demo">
+              <h2>Demo</h2>
+              <img src="https://i.gifer.com/3OYi2.gif"></img>
+          </div>
+          
+          <div id="selfid_container_camera_frame">
+          </div>
+          <button href="#" id="take-photo" title="Take Photo">
+            <i class="material-icons">camera_alt</i>
+          </button>
+          <canvas id="sefid_container_main_part1_canvas"></canvas>
+        </div>
+        <div id="sefid_container_main_gallery"></div>
+      </div>
+      <div class="sefid_container_main_buttons_container">
+        <!-- <button  id="clear"class="button-arounder" onclick="ClearAll()">ClearAll</button> -->
+        <button
+          type="submit"
+          id="submit"
+          class="button-arounder"
+          onclick="Submit()"
+        >
+          Finish
+        </button>
+      </div>
+    </div>
+
+    <script src="assets/js/script.js"></script>
+  </body>
+</html>

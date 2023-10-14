@@ -1,0 +1,11 @@
+pandas
+keras
+matplotlib
+tensorflow
+librosa
+path.py
+pillow
+flask
+flask-cors
+tensorflowjs
+opencv-python
